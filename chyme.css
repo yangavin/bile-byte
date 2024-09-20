@@ -112,18 +112,6 @@ body {
     }
   }
   
-  h1, h2, p:first-of-type {
-    background: linear-gradient(135deg, 
-      #ff007f, /* Pink */
-      #ffcc00, /* Yellow */
-      #00ff00, /* Green */
-      #00ffff, /* Cyan */
-      #0000ff, /* Blue */
-      #800080  /* Purple */
-    );
-    animation: spin 0.6s linear infinite; /* 0.1s for 10 revolutions per second */
-    display: inline-block; /* Ensure rotation doesn't affect layout */
-  }
   @keyframes spin1 {
     from {
       transform: rotate(0deg);
@@ -135,23 +123,18 @@ body {
   
     
   li{
-    animation: spin1 1s linear infinite; /* 0.1s for 10 revolutions per second */
+    animation: spin1 1s linear infinite;
     display: inline-block; /* Ensure rotation doesn't affect layout */
   }
+
+
   /* Rainbow gradient effect on the Bile Bytes text */
 h1, h2, p, ul:first-of-type {
-    background: linear-gradient(135deg, 
-    #ff007f, /* Pink */
-    #ffcc00, /* Yellow */
-    #00ff00, /* Green */
-    #00ffff, /* Cyan */
-    #0000ff, /* Blue */
-    #800080  /* Purple */
-  );
-  -webkit-background-clip: text; /* For Safari */
-  background-clip: text; /* Standard syntax */
-  color: transparent; /* Make text color transparent to show gradient */
-  animation: spin 5s linear infinite; /* 10 revolutions per second */
-  display: inline-block; /* Ensure rotation doesn't affect layout */
+    background: url('chyme.jpg') no-repeat center center; /* Use chyme.jpg as background */
+    background-size: cover; /* Make sure the image covers the text */
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text; /* Standard syntax */
+    color: transparent; /* Make text color transparent to show the image */
+    
+    animation: spin 1s linear infinite;
   }
-  
